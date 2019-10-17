@@ -7,21 +7,8 @@ class CityScreen extends StatefulWidget {
 }
 
 class _CityScreenState extends State<CityScreen> {
-//  @override
-//  void initState() {
-//    super.initState();
-//    print('initState called.');
-//  }
-
-//  @override
-//  void deactivate() {
-//
-//    super.deactivate();
-//    print ('deactivate called');
-//  }
   @override
   Widget build(BuildContext context) {
-//    print('build called.');
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(

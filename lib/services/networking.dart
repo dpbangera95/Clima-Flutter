@@ -6,10 +6,11 @@ class NetworkHelper {
 
   final String url;
 
-  Future<void> getData() async {
+  Future getData() async {
     http.Response response = await http.get(url);
     if (response.statusCode == 200) {
       String data = response.body;
+//      print(data);
 
       return jsonDecode(data);
     } else {

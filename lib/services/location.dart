@@ -8,6 +8,11 @@ class Location {
     try {
       Position position = await Geolocator()
           .getCurrentPosition(desiredAccuracy: LocationAccuracy.low);
+
+      GeolocationStatus geolocationStatus =
+          await Geolocator().checkGeolocationPermissionStatus();
+      print(geolocationStatus);
+
       latitude = position.latitude;
       longitude = position.longitude;
     } catch (e) {
